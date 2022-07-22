@@ -16,7 +16,7 @@
         skip
     fi
 
-    run swaks -s mda --port 587 --to nobody@ressourcenkonflikt.de --from admin@example.com -a -au admin@example.com -ap changeme -tls --body "$BATS_TEST_DESCRIPTION"
+    run swaks -s mda --port 587 --to nobody@ressourcenkonflikt.de --from admin@thievent.org -a -au admin@thievent.org -ap aequ4Ayais -tls --body "$BATS_TEST_DESCRIPTION"
     [ "$status" -eq 0 ]
 }
 

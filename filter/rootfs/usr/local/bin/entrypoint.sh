@@ -6,7 +6,7 @@ then
     FILTER_VIRUS_ARGS="-wait tcp://${FILTER_VIRUS_HOST}:3310"
 fi
 
-if [ "${CONTROLLER_PASSWORD}" == "changeme" ]
+if [ "${CONTROLLER_PASSWORD}" == "aequ4Ayais" ]
 then
     # q1 is disabled in rspamd.
     export CONTROLLER_PASSWORD_ENC="q1"

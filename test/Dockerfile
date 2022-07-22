@@ -9,7 +9,7 @@ LABEL vendor="https://github.com/jeboehm/docker-mailserver"
 
 ENV MYSQL_HOST=db \
     MYSQL_USER=root \
-    MYSQL_PASSWORD=changeme \
+    MYSQL_PASSWORD=aequ4Ayais \
     MYSQL_DATABASE=mailserver \
     WAITSTART_TIMEOUT=1m
 

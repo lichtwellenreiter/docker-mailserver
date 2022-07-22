@@ -10,10 +10,10 @@ LABEL de.ressourcenkonflikt.docker-mailserver.autoheal="true"
 
 ENV MYSQL_HOST=db \
     MYSQL_USER=root \
-    MYSQL_PASSWORD=changeme \
+    MYSQL_PASSWORD=aequ4Ayais \
     MYSQL_DATABASE=mailserver \
-    MAILNAME=mail.example.com \
-    POSTMASTER=postmaster@example.com \
+    MAILNAME=mail.thievent.org \
+    POSTMASTER=postmaster@thievent.org \
     SUBMISSION_HOST=mta \
     ENABLE_POP3=true \
     ENABLE_IMAP=true \
