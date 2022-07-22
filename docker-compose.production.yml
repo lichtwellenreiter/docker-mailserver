@@ -15,4 +15,17 @@ services:
 
   web:
     ports:
-      - "0.0.0.0:81:80"
+      - "0.0.0.0:9091:80"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.mail.entrypoints=http"
+      - "traefik.http.routers.mail.rule=Host(`mail.thievent.org`)"
+      - "traefik.http.middlewares.mail-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.mail.middlewares=mail-https-redirect"
+      - "traefik.http.routers.mail-secure.entrypoints=https"
+      - "traefik.http.routers.mail-secure.rule=Host(`mail.thievent.org`)"
+      - "traefik.http.routers.mail-secure.tls=true"
+      - "traefik.http.routers.mail-secure.tls.certresolver=http"
+      - "traefik.http.routers.mail-secure.service=mail"
+      - "traefik.http.services.mail.loadbalancer.server.port=9000"
+      - "traefik.docker.network=traefik-proxy"
