@@ -8,7 +8,7 @@ LABEL maintainer="jeff@ressourcenkonflikt.de"
 LABEL vendor="https://github.com/jeboehm/docker-mailserver"
 LABEL de.ressourcenkonflikt.docker-mailserver.autoheal="true"
 
-ENV MAILNAME=mail.thievent.org \
+ENV MAILNAME=mail.flind.ch \
     MYNETWORKS=127.0.0.0/8\ 10.0.0.0/8\ 172.16.0.0/12\ 192.168.0.0/16 \
     MYSQL_HOST=db \
     MYSQL_USER=root \

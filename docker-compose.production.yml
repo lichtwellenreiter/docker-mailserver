@@ -19,11 +19,11 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.mail.entrypoints=http"
-      - "traefik.http.routers.mail.rule=Host(`mail.thievent.org`)"
+      - "traefik.http.routers.mail.rule=Host(`mail.flind.ch`)"
       - "traefik.http.middlewares.mail-https-redirect.redirectscheme.scheme=https"
       - "traefik.http.routers.mail.middlewares=mail-https-redirect"
       - "traefik.http.routers.mail-secure.entrypoints=https"
-      - "traefik.http.routers.mail-secure.rule=Host(`mail.thievent.org`)"
+      - "traefik.http.routers.mail-secure.rule=Host(`mail.flind.ch`)"
       - "traefik.http.routers.mail-secure.tls=true"
       - "traefik.http.routers.mail-secure.tls.certresolver=http"
       - "traefik.http.routers.mail-secure.service=mail"

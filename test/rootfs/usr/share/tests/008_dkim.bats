@@ -4,6 +4,6 @@
     [ -r /media/dkim/dkim_selectors.map ]
 }
 
-@test "check DKIM key for thievent.org exists" {
-    [ -r /media/dkim/thievent.org.1337.key ]
+@test "check DKIM key for flind.ch exists" {
+    [ -r /media/dkim/flind.ch.1337.key ]
 }
