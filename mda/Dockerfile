@@ -1,5 +1,5 @@
 ARG DOCKERIZE_VER=0.6.1
-ARG ALPINE_VER=3.20
+ARG ALPINE_VER=3.21
 
 FROM jwilder/dockerize:${DOCKERIZE_VER} AS dockerize
 
